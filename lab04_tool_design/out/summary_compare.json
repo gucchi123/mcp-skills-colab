@@ -1,0 +1,224 @@
+{
+ "provider": "anthropic",
+ "model": "claude-opus-5-5",
+ "n_questions": 40,
+ "variants": {
+  "good": {
+   "n": 40,
+   "first_ok": 34,
+   "first_ok_also": 40,
+   "in_expected": 34,
+   "no_tool": 3,
+   "no_tool_correct": 2,
+   "no_tool_missed": 1,
+   "tool_when_none": 0,
+   "unknown_name": 0,
+   "wrong": [
+    "TS-03",
+    "TS-04",
+    "TS-18",
+    "TS-19",
+    "TS-21",
+    "TS-38"
+   ],
+   "wrong_also": [],
+   "confusion": {
+    "kb": {
+     "kb": 9
+    },
+    "crm": {
+     "crm": 7
+    },
+    "inventory": {
+     "inventory": 6
+    },
+    "expense": {
+     "kb": 3,
+     "なし": 1,
+     "expense": 1
+    },
+    "report": {
+     "report": 6
+    },
+    "contract": {
+     "contract": 5
+    },
+    "なし": {
+     "なし": 2
+    }
+   },
+   "variant": "good",
+   "block": {
+    "tools": 17,
+    "chars": 7444,
+    "tokens_est": 2727
+   },
+   "usage_in_total": 173143,
+   "seconds": 0.1,
+   "cost_usd": 0.0
+  },
+  "vague": {
+   "n": 40,
+   "first_ok": 34,
+   "first_ok_also": 40,
+   "in_expected": 34,
+   "no_tool": 3,
+   "no_tool_correct": 2,
+   "no_tool_missed": 1,
+   "tool_when_none": 0,
+   "unknown_name": 0,
+   "wrong": [
+    "TS-03",
+    "TS-04",
+    "TS-18",
+    "TS-19",
+    "TS-21",
+    "TS-38"
+   ],
+   "wrong_also": [],
+   "confusion": {
+    "kb": {
+     "kb": 9
+    },
+    "crm": {
+     "crm": 7
+    },
+    "inventory": {
+     "inventory": 6
+    },
+    "expense": {
+     "kb": 3,
+     "なし": 1,
+     "expense": 1
+    },
+    "report": {
+     "report": 6
+    },
+    "contract": {
+     "contract": 5
+    },
+    "なし": {
+     "なし": 2
+    }
+   },
+   "variant": "vague",
+   "block": {
+    "tools": 17,
+    "chars": 5918,
+    "tokens_est": 1584
+   },
+   "usage_in_total": 119423,
+   "seconds": 0.1,
+   "cost_usd": 0.0
+  },
+  "names": {
+   "n": 40,
+   "first_ok": 34,
+   "first_ok_also": 40,
+   "in_expected": 34,
+   "no_tool": 3,
+   "no_tool_correct": 2,
+   "no_tool_missed": 1,
+   "tool_when_none": 0,
+   "unknown_name": 0,
+   "wrong": [
+    "TS-03",
+    "TS-04",
+    "TS-18",
+    "TS-19",
+    "TS-21",
+    "TS-38"
+   ],
+   "wrong_also": [],
+   "confusion": {
+    "kb": {
+     "kb": 9
+    },
+    "crm": {
+     "crm": 7
+    },
+    "inventory": {
+     "inventory": 6
+    },
+    "expense": {
+     "kb": 3,
+     "なし": 1,
+     "expense": 1
+    },
+    "report": {
+     "report": 6
+    },
+    "contract": {
+     "contract": 5
+    },
+    "なし": {
+     "なし": 2
+    }
+   },
+   "variant": "names",
+   "block": {
+    "tools": 17,
+    "chars": 7044,
+    "tokens_est": 2627
+   },
+   "usage_in_total": 166303,
+   "seconds": 0.1,
+   "cost_usd": 0.0
+  },
+  "subset": {
+   "n": 40,
+   "first_ok": 34,
+   "first_ok_also": 40,
+   "in_expected": 34,
+   "no_tool": 6,
+   "no_tool_correct": 2,
+   "no_tool_missed": 4,
+   "tool_when_none": 0,
+   "unknown_name": 0,
+   "wrong": [
+    "TS-03",
+    "TS-04",
+    "TS-18",
+    "TS-19",
+    "TS-21",
+    "TS-38"
+   ],
+   "wrong_also": [],
+   "confusion": {
+    "kb": {
+     "kb": 9
+    },
+    "crm": {
+     "crm": 7
+    },
+    "inventory": {
+     "inventory": 6
+    },
+    "expense": {
+     "なし": 4,
+     "expense": 1
+    },
+    "report": {
+     "report": 6
+    },
+    "contract": {
+     "contract": 5
+    },
+    "なし": {
+     "なし": 2
+    }
+   },
+   "variant": "subset",
+   "block": {
+    "tools_min": 2,
+    "tools_max": 3,
+    "chars_avg": 1131,
+    "tokens_est_avg": 420
+   },
+   "usage_in_total": 39415,
+   "seconds": 0.2,
+   "cost_usd": 0.0
+  }
+ },
+ "note": ""
+}

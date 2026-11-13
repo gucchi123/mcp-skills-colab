@@ -1,0 +1,351 @@
+{
+ "schema": {
+  "create_purchase_order": {
+   "python": [
+    "sku",
+    "request_id",
+    "confirm",
+    "qty"
+   ],
+   "schema": [
+    "sku",
+    "request_id",
+    "qty"
+   ],
+   "required": [
+    "sku",
+    "request_id"
+   ],
+   "annotations": {
+    "read_only_hint": false,
+    "destructive_hint": false,
+    "idempotent_hint": true,
+    "open_world_hint": true
+   }
+  },
+  "submit_expense": {
+   "python": [
+    "employee",
+    "category",
+    "expense_date",
+    "amount",
+    "vendor",
+    "description",
+    "receipt",
+    "request_id",
+    "confirm",
+    "ic_record",
+    "attendees",
+    "nights",
+    "pre_approval"
+   ],
+   "schema": [
+    "employee",
+    "category",
+    "expense_date",
+    "amount",
+    "vendor",
+    "description",
+    "receipt",
+    "request_id",
+    "ic_record",
+    "attendees",
+    "nights",
+    "pre_approval"
+   ],
+   "required": [
+    "employee",
+    "category",
+    "expense_date",
+    "amount",
+    "vendor",
+    "description",
+    "receipt",
+    "request_id"
+   ],
+   "annotations": {
+    "read_only_hint": false,
+    "destructive_hint": false,
+    "idempotent_hint": true,
+    "open_world_hint": false
+   }
+  }
+ },
+ "confirm": {
+  "po_accept_True": {
+   "is_error": false,
+   "text": {
+    "order_id": "PO-0001",
+    "request_id": "c-1",
+    "sku": "P-102",
+    "qty": 2500,
+    "supplier_id": "S1",
+    "amount_yen": 650000,
+    "status": "承認待ち",
+    "approver": "製造部長",
+    "note": null,
+    "duplicate": false
+   }
+  },
+  "po_decline_True": {
+   "is_error": true,
+   "text": "Error executing tool create_purchase_order: Resolver for parameter 'confirm' could not resolve: elicitation was decline"
+  },
+  "po_cancel_True": {
+   "is_error": true,
+   "text": "Error executing tool create_purchase_order: Resolver for parameter 'confirm' could not resolve: elicitation was cancel"
+  },
+  "po_accept_False": {
+   "is_error": true,
+   "text": "Error executing tool create_purchase_order: 利用者が登録を取りやめました。発注は登録していません"
+  },
+  "exp_accept": {
+   "is_error": false,
+   "text": {
+    "decision": "自動承認",
+    "reasons": [],
+    "approver": null,
+    "claim_id": "N-0001",
+    "request_id": "e-1",
+    "duplicate": false
+   }
+  },
+  "exp_decline": {
+   "is_error": true,
+   "text": "Error executing tool submit_expense: Resolver for parameter 'confirm' could not resolve: elicitation was decline"
+  },
+  "no_callback": "MCPError: Client did not declare the form elicitation capability required by resolver 'servers.inventory:ask_confirm'",
+  "declined_logged": [
+   "c-4"
+  ]
+ },
+ "idem": {
+  "po": [
+   {
+    "order_id": "PO-0001",
+    "request_id": "O-01",
+    "sku": "P-102",
+    "qty": 2500,
+    "supplier_id": "S1",
+    "amount_yen": 650000,
+    "status": "承認待ち",
+    "approver": "製造部長",
+    "note": null,
+    "duplicate": false
+   },
+   {
+    "order_id": "PO-0001",
+    "request_id": "O-01",
+    "sku": "P-102",
+    "qty": 2500,
+    "supplier_id": "S1",
+    "amount_yen": 650000,
+    "status": "承認待ち",
+    "approver": "製造部長",
+    "note": null,
+    "duplicate": true
+   }
+  ],
+  "po_asked": 1,
+  "exp": [
+   {
+    "decision": "自動承認",
+    "reasons": [],
+    "approver": null,
+    "claim_id": "N-0001",
+    "request_id": "req-1",
+    "duplicate": false
+   },
+   {
+    "decision": "自動承認",
+    "reasons": [],
+    "approver": null,
+    "claim_id": "N-0001",
+    "request_id": "req-1",
+    "duplicate": true
+   },
+   {
+    "decision": "差し戻し",
+    "reasons": [
+     "分割申請（合算して申請し直す）"
+    ],
+    "approver": null,
+    "claim_id": "N-0002",
+    "request_id": "req-2",
+    "duplicate": false
+   }
+  ],
+  "exp_asked": 1,
+  "orders": 1,
+  "expenses": 1
+ },
+ "self": {
+  "is_error": true,
+  "text": "Error executing tool submit_expense: 申請者 (田村 浩二) が利用者 (山根 翔太) と違います。経費は本人だけが申請できます",
+  "asked": 1,
+  "expenses": 0
+ },
+ "gold": {
+  "rows": [
+   {
+    "id": "O-01",
+    "sku": "P-102",
+    "gold": "order",
+    "status": "承認待ち",
+    "qty": 2500,
+    "amount_yen": 650000,
+    "approver": "製造部長",
+    "asked": 1,
+    "ok": true,
+    "note": null
+   },
+   {
+    "id": "O-04",
+    "sku": "K-204",
+    "gold": "order",
+    "status": "発注済み",
+    "qty": 10000,
+    "amount_yen": 30000,
+    "approver": null,
+    "asked": 1,
+    "ok": true,
+    "note": null
+   },
+   {
+    "id": "O-05",
+    "sku": "M-405",
+    "gold": "escalate",
+    "status": "登録しない",
+    "qty": 0,
+    "amount_yen": 0,
+    "approver": null,
+    "asked": 0,
+    "ok": true,
+    "note": "主の発注先が取引停止で、代わりの発注先がない。人に回す"
+   },
+   {
+    "id": "O-08",
+    "sku": "M-401",
+    "gold": "order",
+    "status": "承認待ち",
+    "qty": 700,
+    "amount_yen": 2660000,
+    "approver": "製造部長",
+    "asked": 1,
+    "ok": true,
+    "note": null
+   }
+  ],
+  "match": 4,
+  "n": 4
+ },
+ "wire": {
+  "methods": [
+   "server/discover",
+   "result",
+   "tools/call",
+   "result",
+   "tools/call",
+   "result",
+   "tools/list",
+   "result"
+  ],
+  "same_request_state": true,
+  "asked": [
+   "発注を登録します: P-102 湿度センサー素子 を 2,500 個、株式会社東雲精工 へ、650,000 円。 製造部長の承認待ちで登録します。 よろしいですか。"
+  ],
+  "result": {
+   "order_id": "PO-0001",
+   "request_id": "w-1",
+   "sku": "P-102",
+   "qty": 2500,
+   "supplier_id": "S1",
+   "amount_yen": 650000,
+   "status": "承認待ち",
+   "approver": "製造部長",
+   "note": null,
+   "duplicate": false
+  },
+  "n_lines": 8
+ },
+ "tasks": {
+  "types_2025": [
+   "Task",
+   "GetTaskRequest",
+   "CreateTaskResult"
+  ],
+  "types_2026": [],
+  "server_attrs": [],
+  "client_attrs": [],
+  "ext_files": [
+   "mcp_types/_v2026_07_28/__init__.py"
+  ],
+  "replies": [
+   {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "error": {
+     "code": -32601,
+     "message": "Method not found",
+     "data": "tasks/get"
+    }
+   },
+   {
+    "jsonrpc": "2.0",
+    "id": 2,
+    "error": {
+     "code": -32601,
+     "message": "Method not found",
+     "data": "tasks/list"
+    }
+   }
+  ]
+ },
+ "host": {
+  "runs": [
+   {
+    "label": "① 人が断る",
+    "asked": [
+     {
+      "tool": "inventory.create_purchase_order",
+      "message": "発注を登録します: P-102 湿度センサー素子 を 2,500 個、株式会社東雲精工 へ、650,000 円。 製造部長の承認待ちで登録します。 よろしいですか。"
+     }
+    ],
+    "text": "発注は登録していません (確認で断られました)。",
+    "called": [
+     "get_stock",
+     "create_purchase_order"
+    ]
+   },
+   {
+    "label": "② 人が承認する",
+    "asked": [
+     {
+      "tool": "inventory.create_purchase_order",
+      "message": "発注を登録します: P-102 湿度センサー素子 を 2,500 個、株式会社東雲精工 へ、650,000 円。 製造部長の承認待ちで登録します。 よろしいですか。"
+     }
+    ],
+    "text": "発注を登録しました: PO-0001・2,500 個・650,000 円・承認待ち (製造部長)。",
+    "called": [
+     "get_stock",
+     "create_purchase_order"
+    ]
+   },
+   {
+    "label": "③ 同じ依頼をもう一度 (承認役は承認)",
+    "asked": [],
+    "text": "依頼 O-01 は登録済みでした: PO-0001・2,500 個・650,000 円・承認待ち (製造部長)。",
+    "called": [
+     "get_stock",
+     "create_purchase_order"
+    ]
+   }
+  ],
+  "model_props": [
+   "sku",
+   "request_id",
+   "qty"
+  ],
+  "orders": 1
+ }
+}

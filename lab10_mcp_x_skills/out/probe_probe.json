@@ -1,0 +1,86 @@
+{
+ "version": "2.1.310",
+ "servers": [
+  {
+   "name": "report",
+   "status": "connected",
+   "tools": [
+    [
+     "get_monthly_sales",
+     "読むだけ"
+    ],
+    [
+     "get_inquiry_counts",
+     "読むだけ"
+    ],
+    [
+     "get_inventory_snapshot",
+     "読むだけ"
+    ]
+   ]
+  },
+  {
+   "name": "contract",
+   "status": "connected",
+   "tools": [
+    [
+     "list_contracts",
+     "読むだけ"
+    ],
+    [
+     "get_contract",
+     "読むだけ"
+    ],
+    [
+     "get_contract_checklist",
+     "読むだけ"
+    ]
+   ]
+  },
+  {
+   "name": "kb",
+   "status": "connected",
+   "tools": [
+    [
+     "search_regulations",
+     "読むだけ"
+    ],
+    [
+     "get_regulation",
+     "読むだけ"
+    ]
+   ]
+  },
+  {
+   "name": "inventory",
+   "status": "connected",
+   "tools": [
+    [
+     "get_stock",
+     "読むだけ"
+    ],
+    [
+     "list_below_reorder",
+     "読むだけ"
+    ],
+    [
+     "create_purchase_order",
+     "書き込みあり"
+    ]
+   ]
+  }
+ ],
+ "skills": [
+  {
+   "name": "solaha-contract-review",
+   "tokens": 64
+  },
+  {
+   "name": "solaha-monthly-report",
+   "tokens": 47
+  }
+ ],
+ "skill_tokens": 111,
+ "mcp_tools": 11,
+ "mcp_deferred_tokens": 1669
+}

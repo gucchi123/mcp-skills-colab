@@ -1,0 +1,317 @@
+{
+ "resources": {
+  "crm": {
+   "resources": [
+    "crm://policy"
+   ],
+   "templates": [],
+   "tools": [
+    "find_customer",
+    "get_customer",
+    "list_customers_by_product"
+   ]
+  },
+  "kb": {
+   "resources": [],
+   "templates": [
+    "kb://regulations/{doc_id}"
+   ],
+   "tools": [
+    "search_regulations",
+    "get_regulation"
+   ]
+  },
+  "inventory": {
+   "resources": [
+    "inventory://purchase_policy"
+   ],
+   "templates": [],
+   "tools": [
+    "get_stock",
+    "list_below_reorder",
+    "create_purchase_order"
+   ]
+  },
+  "report": {
+   "resources": [
+    "report://template"
+   ],
+   "templates": [],
+   "tools": [
+    "get_monthly_sales",
+    "get_inquiry_counts",
+    "get_inventory_snapshot"
+   ]
+  },
+  "bad_uri_error": "Error creating resource from template kb://regulations/zz",
+  "audit_before": 0,
+  "audit_after": 0
+ },
+ "visibility": {
+  "hidden": {
+   "C-002": {
+    "U-01": [
+     "rank",
+     "credit_limit_yen",
+     "contact.name",
+     "contact.phone",
+     "contact.email"
+    ],
+    "U-02": [],
+    "U-03": [],
+    "U-04": [],
+    "U-05": [
+     "rank",
+     "credit_limit_yen",
+     "contact.email"
+    ],
+    "U-06": [
+     "contact.name",
+     "contact.phone",
+     "contact.email"
+    ],
+    "U-07": [
+     "contact.name",
+     "contact.phone",
+     "contact.email"
+    ],
+    "U-08": [
+     "rank",
+     "credit_limit_yen",
+     "contact.name",
+     "contact.phone",
+     "contact.email"
+    ],
+    "U-09": [
+     "rank",
+     "credit_limit_yen",
+     "contact.name",
+     "contact.phone",
+     "contact.email"
+    ]
+   },
+   "IND-001": {
+    "U-01": [
+     "name",
+     "contact.name",
+     "contact.phone",
+     "contact.email",
+     "contact.address"
+    ],
+    "U-02": [
+     "name",
+     "contact.name",
+     "contact.phone",
+     "contact.email",
+     "contact.address"
+    ],
+    "U-03": [
+     "name",
+     "contact.name",
+     "contact.phone",
+     "contact.email",
+     "contact.address"
+    ],
+    "U-04": [
+     "name",
+     "contact.name",
+     "contact.phone",
+     "contact.email",
+     "contact.address"
+    ],
+    "U-05": [],
+    "U-06": [
+     "name",
+     "contact.name",
+     "contact.phone",
+     "contact.email",
+     "contact.address"
+    ],
+    "U-07": [
+     "name",
+     "contact.name",
+     "contact.phone",
+     "contact.email",
+     "contact.address"
+    ],
+    "U-08": [
+     "name",
+     "contact.name",
+     "contact.phone",
+     "contact.email",
+     "contact.address"
+    ],
+    "U-09": [
+     "name",
+     "contact.name",
+     "contact.phone",
+     "contact.email",
+     "contact.address"
+    ]
+   }
+  },
+  "match": 18,
+  "n": 18
+ },
+ "audit": {
+  "rows": [
+   {
+    "at": "2026-10-24T19:14:53",
+    "user": "U-01",
+    "server": "crm",
+    "tool": "get_customer",
+    "customer": "C-002",
+    "hidden": [
+     "rank",
+     "credit_limit_yen",
+     "contact.name",
+     "contact.phone",
+     "contact.email"
+    ]
+   },
+   {
+    "at": "2026-10-24T19:14:53",
+    "user": "U-05",
+    "server": "crm",
+    "tool": "get_customer",
+    "customer": "IND-001",
+    "hidden": []
+   },
+   {
+    "at": "2026-10-24T19:14:53",
+    "user": "U-09",
+    "server": "crm",
+    "tool": "get_customer",
+    "customer": "C-002",
+    "hidden": [
+     "rank",
+     "credit_limit_yen",
+     "contact.name",
+     "contact.phone",
+     "contact.email"
+    ]
+   },
+   {
+    "at": "2026-10-24T19:14:53",
+    "user": "U-02",
+    "server": "crm",
+    "tool": "find_customer",
+    "query": "フーズ",
+    "returned": [
+     "C-002"
+    ]
+   }
+  ],
+  "no_user_error": "Error executing tool get_customer: 利用者が決まっていません (SOLAHA_USER が空)"
+ },
+ "cache": {
+  "crm": {
+   "tools_ttl_ms": 300000,
+   "tools_scope": "public",
+   "resources_ttl_ms": 0,
+   "resources_scope": "private",
+   "read_only": 3,
+   "tools": 3
+  },
+  "kb": {
+   "tools_ttl_ms": 300000,
+   "tools_scope": "public",
+   "resources_ttl_ms": 300000,
+   "resources_scope": "public",
+   "read_only": 2,
+   "tools": 2
+  },
+  "inventory": {
+   "tools_ttl_ms": 0,
+   "tools_scope": "private",
+   "resources_ttl_ms": 0,
+   "resources_scope": "private",
+   "read_only": 2,
+   "tools": 3
+  },
+  "report": {
+   "tools_ttl_ms": 300000,
+   "tools_scope": "public",
+   "resources_ttl_ms": 0,
+   "resources_scope": "private",
+   "read_only": 3,
+   "tools": 3
+  },
+  "expense": {
+   "tools_ttl_ms": 0,
+   "tools_scope": "private",
+   "resources_ttl_ms": 0,
+   "resources_scope": "private",
+   "read_only": 2,
+   "tools": 3
+  }
+ },
+ "report": {
+  "rows": [
+   {
+    "month": "2026-05",
+    "total_yen": 28120000,
+    "mom_pct": 4.2,
+    "top": "TL-200",
+    "inquiries": 86,
+    "low_stock": [
+     "M-401",
+     "P-102",
+     "P-107"
+    ],
+    "ok": true
+   },
+   {
+    "month": "2026-06",
+    "total_yen": 28903000,
+    "mom_pct": 2.8,
+    "top": "TL-200",
+    "inquiries": 81,
+    "low_stock": [
+     "M-401",
+     "P-104"
+    ],
+    "ok": true
+   },
+   {
+    "month": "2026-07",
+    "total_yen": 29096000,
+    "mom_pct": 0.7,
+    "top": "TL-200",
+    "inquiries": 73,
+    "low_stock": [
+     "P-104",
+     "P-107"
+    ],
+    "ok": true
+   },
+   {
+    "month": "2026-08",
+    "total_yen": 29269000,
+    "mom_pct": 0.6,
+    "top": "TL-200",
+    "inquiries": 110,
+    "low_stock": [
+     "P-107"
+    ],
+    "ok": true
+   },
+   {
+    "month": "2026-09",
+    "total_yen": 30784000,
+    "mom_pct": 5.2,
+    "top": "TL-200",
+    "inquiries": 80,
+    "low_stock": [
+     "M-401",
+     "M-403",
+     "P-102",
+     "P-104"
+    ],
+    "ok": true
+   }
+  ],
+  "all_ok": true
+ },
+ "audit_total": 37
+}

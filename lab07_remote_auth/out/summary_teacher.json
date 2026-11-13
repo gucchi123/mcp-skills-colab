@@ -1,0 +1,151 @@
+{
+ "url_port_changes_each_run": true,
+ "noauth": {
+  "status": 401,
+  "www_authenticate": "Bearer error=\"invalid_token\", error_description=\"Authentication required\", resource_metadata=\"http://127.0.0.1:49348/.well-known/oauth-protected-resource/mcp\"",
+  "body": {
+   "error": "invalid_token",
+   "error_description": "Authentication required"
+  }
+ },
+ "prm": {
+  "/.well-known/oauth-protected-resource/mcp": {
+   "status": 200,
+   "body": {
+    "resource": "http://127.0.0.1:49348/mcp",
+    "authorization_servers": [
+     "https://auth.solaha.example"
+    ],
+    "scopes_supported": [
+     "crm.read"
+    ],
+    "bearer_methods_supported": [
+     "header"
+    ]
+   }
+  },
+  "/.well-known/oauth-protected-resource": {
+   "status": 404,
+   "body": "Not Found"
+  },
+  "/.well-known/oauth-authorization-server": {
+   "status": 404,
+   "body": "Not Found"
+  }
+ },
+ "tokens": {
+  "rows": [
+   {
+    "case": "トークン無し",
+    "status": 401,
+    "error": "invalid_token",
+    "reason": "-",
+    "get_customer": "-",
+    "www_authenticate": "Bearer error=\"invalid_token\", error_description=\"Authentication required\", resource_metadata=\"http://127.0.0.1:49348/.well-known/oauth-protected-resource/mcp\""
+   },
+   {
+    "case": "形が違う (ただの文字)",
+    "status": 401,
+    "error": "invalid_token",
+    "reason": "形が違う",
+    "get_customer": "-",
+    "www_authenticate": "Bearer error=\"invalid_token\", error_description=\"Authentication required\", resource_metadata=\"http://127.0.0.1:49348/.well-known/oauth-protected-resource/mcp\""
+   },
+   {
+    "case": "署名を書き換えた",
+    "status": 401,
+    "error": "invalid_token",
+    "reason": "署名が合わない",
+    "get_customer": "-",
+    "www_authenticate": "Bearer error=\"invalid_token\", error_description=\"Authentication required\", resource_metadata=\"http://127.0.0.1:49348/.well-known/oauth-protected-resource/mcp\""
+   },
+   {
+    "case": "宛先が別のサーバ",
+    "status": 401,
+    "error": "invalid_token",
+    "reason": "宛先が違う (:1/mcp)",
+    "get_customer": "-",
+    "www_authenticate": "Bearer error=\"invalid_token\", error_description=\"Authentication required\", resource_metadata=\"http://127.0.0.1:49348/.well-known/oauth-protected-resource/mcp\""
+   },
+   {
+    "case": "期限切れ (5 秒前)",
+    "status": 401,
+    "error": "invalid_token",
+    "reason": "期限切れ",
+    "get_customer": "-",
+    "www_authenticate": "Bearer error=\"invalid_token\", error_description=\"Authentication required\", resource_metadata=\"http://127.0.0.1:49348/.well-known/oauth-protected-resource/mcp\""
+   },
+   {
+    "case": "範囲が inventory.read",
+    "status": 403,
+    "error": "insufficient_scope",
+    "reason": "通る U-02 inventory.read",
+    "get_customer": "-",
+    "www_authenticate": "Bearer error=\"insufficient_scope\", error_description=\"Required scope: crm.read\", resource_metadata=\"http://127.0.0.1:49348/.well-known/oauth-protected-resource/mcp\""
+   },
+   {
+    "case": "知らない利用者 U-99",
+    "status": 200,
+    "error": "-",
+    "reason": "通る U-99 crm.read",
+    "get_customer": "✗ 知らない利用者のトークンです: U-99",
+    "www_authenticate": ""
+   },
+   {
+    "case": "U-01 crm.read",
+    "status": 200,
+    "error": "-",
+    "reason": "通る U-01 crm.read",
+    "get_customer": "✓ 隠した 5 項目",
+    "www_authenticate": ""
+   },
+   {
+    "case": "U-02 crm.read",
+    "status": 200,
+    "error": "-",
+    "reason": "通る U-02 crm.read",
+    "get_customer": "✓ 隠した 0 項目",
+    "www_authenticate": ""
+   }
+  ]
+ },
+ "users": {
+  "U-01": [
+   "rank",
+   "credit_limit_yen",
+   "contact.name",
+   "contact.phone",
+   "contact.email"
+  ],
+  "U-02": [],
+  "U-05": [
+   "rank",
+   "credit_limit_yen",
+   "contact.email"
+  ]
+ },
+ "envuser": {
+  "hidden": [
+   "rank",
+   "credit_limit_yen",
+   "contact.name",
+   "contact.phone",
+   "contact.email"
+  ],
+  "audit_users": [
+   "U-01",
+   "U-02",
+   "U-05"
+  ],
+  "audit_n": 6
+ },
+ "decode": {
+  "claims": {
+   "sub": "U-02",
+   "aud": "http://127.0.0.1:49348/mcp",
+   "scope": "crm.read",
+   "iss": "https://auth.solaha.example"
+  },
+  "ttl": 600
+ }
+}

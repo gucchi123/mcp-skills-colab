@@ -1,0 +1,31 @@
+{
+ "kb": [
+  "search_regulations",
+  "get_regulation"
+ ],
+ "crm": [
+  "find_customer",
+  "get_customer",
+  "list_customers_by_product"
+ ],
+ "inventory": [
+  "get_stock",
+  "list_below_reorder",
+  "create_purchase_order"
+ ],
+ "expense": [
+  "check_expense",
+  "submit_expense",
+  "get_expense_status"
+ ],
+ "report": [
+  "get_monthly_sales",
+  "get_inquiry_counts",
+  "get_inventory_snapshot"
+ ],
+ "contract": [
+  "list_contracts",
+  "get_contract",
+  "get_contract_checklist"
+ ]
+}

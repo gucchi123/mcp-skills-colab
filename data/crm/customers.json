@@ -1,0 +1,347 @@
+[
+ {
+  "id": "C-001",
+  "type": "法人",
+  "name": "株式会社ツバメ冷凍",
+  "products": [
+   "TL-200",
+   "GW-5"
+  ],
+  "sales_rep": "U-01",
+  "rank": "B",
+  "credit_limit_yen": 20000000,
+  "contact": {
+   "name": "青木 亮",
+   "phone": "03-0000-1007",
+   "email": "contact01@cust01.example"
+  }
+ },
+ {
+  "id": "C-002",
+  "type": "法人",
+  "name": "丸星フーズ株式会社",
+  "products": [
+   "TL-200"
+  ],
+  "sales_rep": "U-02",
+  "rank": "B",
+  "credit_limit_yen": 20000000,
+  "contact": {
+   "name": "上田 大輝",
+   "phone": "03-0000-1014",
+   "email": "contact02@cust02.example"
+  }
+ },
+ {
+  "id": "C-003",
+  "type": "法人",
+  "name": "東和ロジテック株式会社",
+  "products": [
+   "GW-5",
+   "BX-10"
+  ],
+  "sales_rep": "U-01",
+  "rank": "B",
+  "credit_limit_yen": 15000000,
+  "contact": {
+   "name": "江口 彩花",
+   "phone": "03-0000-1021",
+   "email": "contact03@cust03.example"
+  }
+ },
+ {
+  "id": "C-004",
+  "type": "法人",
+  "name": "さくら医療器株式会社",
+  "products": [
+   "SC-30"
+  ],
+  "sales_rep": "U-02",
+  "rank": "A",
+  "credit_limit_yen": 8000000,
+  "contact": {
+   "name": "大野 彩花",
+   "phone": "03-0000-1028",
+   "email": "contact04@cust04.example"
+  }
+ },
+ {
+  "id": "C-005",
+  "type": "法人",
+  "name": "港北ビルサービス株式会社",
+  "products": [
+   "DP-8",
+   "SC-30"
+  ],
+  "sales_rep": "U-01",
+  "rank": "B",
+  "credit_limit_yen": 10000000,
+  "contact": {
+   "name": "小川 真由",
+   "phone": "03-0000-1035",
+   "email": "contact05@cust05.example"
+  }
+ },
+ {
+  "id": "C-006",
+  "type": "法人",
+  "name": "白鷺製薬株式会社",
+  "products": [
+   "TL-200",
+   "SC-30"
+  ],
+  "sales_rep": "U-02",
+  "rank": "B",
+  "credit_limit_yen": 30000000,
+  "contact": {
+   "name": "加藤 真由",
+   "phone": "03-0000-1042",
+   "email": "contact06@cust06.example"
+  }
+ },
+ {
+  "id": "C-007",
+  "type": "法人",
+  "name": "弥生ストア株式会社",
+  "products": [
+   "DP-8"
+  ],
+  "sales_rep": "U-01",
+  "rank": "C",
+  "credit_limit_yen": 10000000,
+  "contact": {
+   "name": "木村 千尋",
+   "phone": "03-0000-1049",
+   "email": "contact07@cust07.example"
+  }
+ },
+ {
+  "id": "C-008",
+  "type": "法人",
+  "name": "葵エネルギー株式会社",
+  "products": [
+   "BX-10"
+  ],
+  "sales_rep": "U-02",
+  "rank": "B",
+  "credit_limit_yen": 8000000,
+  "contact": {
+   "name": "久保田 健太",
+   "phone": "03-0000-1056",
+   "email": "contact08@cust08.example"
+  }
+ },
+ {
+  "id": "C-009",
+  "type": "法人",
+  "name": "北浜スーパー株式会社",
+  "products": [
+   "BX-10"
+  ],
+  "sales_rep": "U-01",
+  "rank": "A",
+  "credit_limit_yen": 30000000,
+  "contact": {
+   "name": "小島 春香",
+   "phone": "03-0000-1063",
+   "email": "contact09@cust09.example"
+  }
+ },
+ {
+  "id": "C-010",
+  "type": "法人",
+  "name": "青葉クリニック",
+  "products": [
+   "SC-30"
+  ],
+  "sales_rep": "U-02",
+  "rank": "B",
+  "credit_limit_yen": 30000000,
+  "contact": {
+   "name": "斎藤 彩花",
+   "phone": "03-0000-1070",
+   "email": "contact10@cust10.example"
+  }
+ },
+ {
+  "id": "C-011",
+  "type": "法人",
+  "name": "五十鈴食品株式会社",
+  "products": [
+   "DP-8"
+  ],
+  "sales_rep": "U-01",
+  "rank": "B",
+  "credit_limit_yen": 8000000,
+  "contact": {
+   "name": "杉山 千尋",
+   "phone": "03-0000-1077",
+   "email": "contact11@cust11.example"
+  }
+ },
+ {
+  "id": "C-012",
+  "type": "法人",
+  "name": "若葉倉庫株式会社",
+  "products": [
+   "BX-10"
+  ],
+  "sales_rep": "U-02",
+  "rank": "A",
+  "credit_limit_yen": 30000000,
+  "contact": {
+   "name": "高木 直樹",
+   "phone": "03-0000-1084",
+   "email": "contact12@cust12.example"
+  }
+ },
+ {
+  "id": "C-013",
+  "type": "法人",
+  "name": "千早精肉店",
+  "products": [
+   "BX-10",
+   "DP-8"
+  ],
+  "sales_rep": "U-01",
+  "rank": "A",
+  "credit_limit_yen": 30000000,
+  "contact": {
+   "name": "千葉 健太",
+   "phone": "03-0000-1091",
+   "email": "contact13@cust13.example"
+  }
+ },
+ {
+  "id": "C-014",
+  "type": "法人",
+  "name": "紅葉学園",
+  "products": [
+   "SC-30"
+  ],
+  "sales_rep": "U-02",
+  "rank": "A",
+  "credit_limit_yen": 10000000,
+  "contact": {
+   "name": "土屋 直樹",
+   "phone": "03-0000-1098",
+   "email": "contact14@cust14.example"
+  }
+ },
+ {
+  "id": "C-015",
+  "type": "法人",
+  "name": "鳴海ホテル株式会社",
+  "products": [
+   "DP-8"
+  ],
+  "sales_rep": "U-01",
+  "rank": "A",
+  "credit_limit_yen": 20000000,
+  "contact": {
+   "name": "中島 大輝",
+   "phone": "03-0000-1105",
+   "email": "contact15@cust15.example"
+  }
+ },
+ {
+  "id": "C-016",
+  "type": "法人",
+  "name": "志摩水産株式会社",
+  "products": [
+   "GW-5"
+  ],
+  "sales_rep": "U-02",
+  "rank": "B",
+  "credit_limit_yen": 3000000,
+  "contact": {
+   "name": "野口 優斗",
+   "phone": "03-0000-1112",
+   "email": "contact16@cust16.example"
+  }
+ },
+ {
+  "id": "C-017",
+  "type": "法人",
+  "name": "朝凪ファーマ株式会社",
+  "products": [
+   "DP-8"
+  ],
+  "sales_rep": "U-01",
+  "rank": "C",
+  "credit_limit_yen": 3000000,
+  "contact": {
+   "name": "長谷川 彩花",
+   "phone": "03-0000-1119",
+   "email": "contact17@cust17.example"
+  }
+ },
+ {
+  "id": "IND-001",
+  "type": "個人",
+  "name": "市川 結衣",
+  "products": [
+   "BX-10"
+  ],
+  "sales_rep": null,
+  "rank": null,
+  "credit_limit_yen": null,
+  "contact": {
+   "name": "市川 結衣",
+   "phone": "03-0000-9011",
+   "email": "person01@home.example",
+   "address": "東京都架空区みなと町 1-2-3"
+  }
+ },
+ {
+  "id": "IND-002",
+  "type": "個人",
+  "name": "岩田 誠一",
+  "products": [
+   "DP-8"
+  ],
+  "sales_rep": null,
+  "rank": null,
+  "credit_limit_yen": null,
+  "contact": {
+   "name": "岩田 誠一",
+   "phone": "03-0000-9022",
+   "email": "person02@home.example",
+   "address": "神奈川県架空市あおば台 4-5-6"
+  }
+ },
+ {
+  "id": "IND-003",
+  "type": "個人",
+  "name": "内藤 さくら",
+  "products": [
+   "GW-5"
+  ],
+  "sales_rep": null,
+  "rank": null,
+  "credit_limit_yen": null,
+  "contact": {
+   "name": "内藤 さくら",
+   "phone": "03-0000-9033",
+   "email": "person03@home.example",
+   "address": "埼玉県架空市ひかり野 7-8-9"
+  }
+ },
+ {
+  "id": "IND-004",
+  "type": "個人",
+  "name": "太田 健司",
+  "products": [
+   "GW-5"
+  ],
+  "sales_rep": null,
+  "rank": null,
+  "credit_limit_yen": null,
+  "contact": {
+   "name": "太田 健司",
+   "phone": "03-0000-9044",
+   "email": "person04@home.example",
+   "address": "千葉県架空市しおかぜ 2-4-6"
+  }
+ }
+]

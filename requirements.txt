@@ -1,0 +1,4 @@
+mcp==2.3.0
+pytest
+anthropic==2.3.0
+claude-agent-sdk==0.2.174   # 第 10 部 (同梱の Claude Code を使う)

@@ -1,0 +1,830 @@
+[
+ {
+  "id": "E-01",
+  "employee": "山根 翔太",
+  "department": "営業部",
+  "position": "一般",
+  "category": "交通費",
+  "expense_date": "2026-09-03",
+  "submitted": "2026-10-02",
+  "amount": 1280,
+  "vendor": "東都メトロ",
+  "description": "客先訪問（往復）",
+  "receipt": false,
+  "ic_record": true,
+  "gold": {
+   "decision": "auto_approve",
+   "reasons": [],
+   "approver": null
+  }
+ },
+ {
+  "id": "E-02",
+  "employee": "山根 翔太",
+  "department": "営業部",
+  "position": "一般",
+  "category": "会議費",
+  "expense_date": "2026-09-08",
+  "submitted": "2026-10-02",
+  "amount": 5200,
+  "vendor": "カフェ・ソレイユ",
+  "description": "営業会議の飲料",
+  "receipt": true,
+  "attendees": 4,
+  "gold": {
+   "decision": "auto_approve",
+   "reasons": [],
+   "approver": null
+  }
+ },
+ {
+  "id": "E-03",
+  "employee": "久保 紗希",
+  "department": "製造部",
+  "position": "一般",
+  "category": "消耗品費",
+  "expense_date": "2026-09-09",
+  "submitted": "2026-10-01",
+  "amount": 8800,
+  "vendor": "ミナト電材",
+  "description": "はんだと工具",
+  "receipt": true,
+  "gold": {
+   "decision": "auto_approve",
+   "reasons": [],
+   "approver": null
+  }
+ },
+ {
+  "id": "E-04",
+  "employee": "岡田 悠真",
+  "department": "開発部",
+  "position": "一般",
+  "category": "書籍費",
+  "expense_date": "2026-09-10",
+  "submitted": "2026-10-03",
+  "amount": 4620,
+  "vendor": "青林書店",
+  "description": "グラフ理論の専門書",
+  "receipt": true,
+  "gold": {
+   "decision": "auto_approve",
+   "reasons": [],
+   "approver": null
+  }
+ },
+ {
+  "id": "E-05",
+  "employee": "山根 翔太",
+  "department": "営業部",
+  "position": "一般",
+  "category": "宿泊費",
+  "expense_date": "2026-09-15",
+  "submitted": "2026-10-02",
+  "amount": 11800,
+  "vendor": "ホテル川越ステイ",
+  "description": "工場立会いの宿泊",
+  "receipt": true,
+  "nights": 1,
+  "gold": {
+   "decision": "needs_manager",
+   "reasons": [],
+   "approver": "課長"
+  }
+ },
+ {
+  "id": "E-06",
+  "employee": "山根 翔太",
+  "department": "営業部",
+  "position": "一般",
+  "category": "宿泊費",
+  "expense_date": "2026-09-16",
+  "submitted": "2026-10-02",
+  "amount": 13500,
+  "vendor": "ホテル大崎グラン",
+  "description": "第二工場訪問の宿泊",
+  "receipt": true,
+  "nights": 1,
+  "gold": {
+   "decision": "reject",
+   "reasons": [
+    "宿泊費の1泊あたり上限超過"
+   ],
+   "approver": null
+  }
+ },
+ {
+  "id": "E-07",
+  "employee": "田村 浩二",
+  "department": "営業部",
+  "position": "部長",
+  "category": "宿泊費",
+  "expense_date": "2026-09-16",
+  "submitted": "2026-10-05",
+  "amount": 14300,
+  "vendor": "ホテル大崎グラン",
+  "description": "第二工場訪問の宿泊",
+  "receipt": true,
+  "nights": 1,
+  "gold": {
+   "decision": "needs_manager",
+   "reasons": [],
+   "approver": "本部長"
+  }
+ },
+ {
+  "id": "E-08",
+  "employee": "吉岡 拓也",
+  "department": "人事部",
+  "position": "課長",
+  "category": "接待交際費",
+  "expense_date": "2026-09-17",
+  "submitted": "2026-10-06",
+  "amount": 27000,
+  "vendor": "割烹みなせ",
+  "description": "採用協力会社との会食",
+  "receipt": true,
+  "attendees": 3,
+  "pre_approval": "PA-0912",
+  "gold": {
+   "decision": "needs_manager",
+   "reasons": [],
+   "approver": "部長"
+  }
+ },
+ {
+  "id": "E-09",
+  "employee": "石黒 慎",
+  "department": "営業部",
+  "position": "課長",
+  "category": "接待交際費",
+  "expense_date": "2026-09-18",
+  "submitted": "2026-10-06",
+  "amount": 18400,
+  "vendor": "ビストロ汐留",
+  "description": "顧客との会食",
+  "receipt": true,
+  "attendees": 2,
+  "pre_approval": null,
+  "gold": {
+   "decision": "reject",
+   "reasons": [
+    "接待交際費の事前申請なし"
+   ],
+   "approver": null
+  }
+ },
+ {
+  "id": "E-10",
+  "employee": "矢野 由香",
+  "department": "営業部",
+  "position": "副部長",
+  "category": "接待交際費",
+  "expense_date": "2026-09-24",
+  "submitted": "2026-10-07",
+  "amount": 48000,
+  "vendor": "料亭たちばな",
+  "description": "顧客との会食",
+  "receipt": true,
+  "attendees": 4,
+  "pre_approval": "PA-0920",
+  "gold": {
+   "decision": "reject",
+   "reasons": [
+    "接待交際費の1人あたり上限超過"
+   ],
+   "approver": null
+  }
+ },
+ {
+  "id": "E-11",
+  "employee": "山根 翔太",
+  "department": "営業部",
+  "position": "一般",
+  "category": "会議費",
+  "expense_date": "2026-09-25",
+  "submitted": "2026-10-07",
+  "amount": 10800,
+  "vendor": "仕出し弁当ひなた",
+  "description": "社内会議の弁当",
+  "receipt": true,
+  "attendees": 6,
+  "gold": {
+   "decision": "reject",
+   "reasons": [
+    "会議費の1人あたり上限超過"
+   ],
+   "approver": null
+  }
+ },
+ {
+  "id": "E-12",
+  "employee": "久保 紗希",
+  "department": "製造部",
+  "position": "一般",
+  "category": "消耗品費",
+  "expense_date": "2026-09-26",
+  "submitted": "2026-10-05",
+  "amount": 6400,
+  "vendor": "ミナト電材",
+  "description": "治具の部材",
+  "receipt": true,
+  "gold": {
+   "decision": "needs_finance",
+   "reasons": [
+    "休日に発生した経費"
+   ],
+   "approver": null
+  }
+ },
+ {
+  "id": "E-13",
+  "employee": "岡田 悠真",
+  "department": "開発部",
+  "position": "一般",
+  "category": "消耗品費",
+  "expense_date": "2026-09-29",
+  "submitted": "2026-10-06",
+  "amount": 128000,
+  "vendor": "テクノ機材センター",
+  "description": "計測用オシロスコープ",
+  "receipt": true,
+  "gold": {
+   "decision": "reject",
+   "reasons": [
+    "10万円以上は固定資産（稟議へ）"
+   ],
+   "approver": null
+  }
+ },
+ {
+  "id": "E-14",
+  "employee": "岡田 悠真",
+  "department": "開発部",
+  "position": "一般",
+  "category": "消耗品費",
+  "expense_date": "2026-09-30",
+  "submitted": "2026-10-06",
+  "amount": 2480,
+  "vendor": "コンビニ北口店",
+  "description": "電池",
+  "receipt": false,
+  "gold": {
+   "decision": "auto_approve",
+   "reasons": [],
+   "approver": null
+  }
+ },
+ {
+  "id": "E-15",
+  "employee": "西村 蓮",
+  "department": "情報システム部",
+  "position": "一般",
+  "category": "消耗品費",
+  "expense_date": "2026-09-30",
+  "submitted": "2026-10-06",
+  "amount": 5980,
+  "vendor": "ミナト電材",
+  "description": "LANケーブル",
+  "receipt": false,
+  "gold": {
+   "decision": "reject",
+   "reasons": [
+    "領収書なし"
+   ],
+   "approver": null
+  }
+ },
+ {
+  "id": "E-16",
+  "employee": "山根 翔太",
+  "department": "営業部",
+  "position": "一般",
+  "category": "交通費",
+  "expense_date": "2026-09-04",
+  "submitted": "2026-10-02",
+  "amount": 8640,
+  "vendor": "東都タクシー",
+  "description": "客先からの帰社",
+  "receipt": false,
+  "ic_record": false,
+  "gold": {
+   "decision": "reject",
+   "reasons": [
+    "領収書なし"
+   ],
+   "approver": null
+  }
+ },
+ {
+  "id": "E-17",
+  "employee": "山根 翔太",
+  "department": "営業部",
+  "position": "一般",
+  "category": "交通費",
+  "expense_date": "2026-09-11",
+  "submitted": "2026-10-02",
+  "amount": 34200,
+  "vendor": "東北新幹線",
+  "description": "第二工場への出張（往復）",
+  "receipt": true,
+  "ic_record": false,
+  "gold": {
+   "decision": "needs_finance",
+   "reasons": [
+    "交通費の上限超過"
+   ],
+   "approver": null
+  }
+ },
+ {
+  "id": "E-18",
+  "employee": "堀 陽菜",
+  "department": "人事部",
+  "position": "一般",
+  "category": "書籍費",
+  "expense_date": "2026-09-12",
+  "submitted": "2026-10-03",
+  "amount": 12100,
+  "vendor": "青林書店",
+  "description": "労務管理の書籍2冊",
+  "receipt": true,
+  "gold": {
+   "decision": "reject",
+   "reasons": [
+    "書籍費の上限超過"
+   ],
+   "approver": null
+  }
+ },
+ {
+  "id": "E-19",
+  "employee": "中西 葵",
+  "department": "経理部",
+  "position": "一般",
+  "category": "交通費",
+  "expense_date": "2026-08-27",
+  "submitted": "2026-10-05",
+  "amount": 1960,
+  "vendor": "東都メトロ",
+  "description": "銀行への往復",
+  "receipt": false,
+  "ic_record": true,
+  "gold": {
+   "decision": "needs_finance",
+   "reasons": [
+    "申請期限（翌月10日）超過"
+   ],
+   "approver": null
+  }
+ },
+ {
+  "id": "E-20",
+  "employee": "久保 紗希",
+  "department": "製造部",
+  "position": "一般",
+  "category": "消耗品費",
+  "expense_date": "2026-08-20",
+  "submitted": "2026-09-30",
+  "amount": 22000,
+  "vendor": "ミナト電材",
+  "description": "作業台の部品",
+  "receipt": true,
+  "gold": {
+   "decision": "needs_finance",
+   "reasons": [
+    "申請期限（翌月10日）超過"
+   ],
+   "approver": null
+  }
+ },
+ {
+  "id": "E-21",
+  "employee": "西村 蓮",
+  "department": "情報システム部",
+  "position": "一般",
+  "category": "消耗品費",
+  "expense_date": "2026-09-17",
+  "submitted": "2026-10-06",
+  "amount": 9800,
+  "vendor": "ミナト電材",
+  "description": "ネットワーク機器の部材（1）",
+  "receipt": true,
+  "gold": {
+   "decision": "reject",
+   "reasons": [
+    "分割申請（合算して申請し直す）"
+   ],
+   "approver": null
+  }
+ },
+ {
+  "id": "E-22",
+  "employee": "西村 蓮",
+  "department": "情報システム部",
+  "position": "一般",
+  "category": "消耗品費",
+  "expense_date": "2026-09-17",
+  "submitted": "2026-10-06",
+  "amount": 9600,
+  "vendor": "ミナト電材",
+  "description": "ネットワーク機器の部材（2）",
+  "receipt": true,
+  "gold": {
+   "decision": "reject",
+   "reasons": [
+    "分割申請（合算して申請し直す）"
+   ],
+   "approver": null
+  }
+ },
+ {
+  "id": "E-23",
+  "employee": "平井 恵",
+  "department": "製造部",
+  "position": "課長",
+  "category": "消耗品費",
+  "expense_date": "2026-09-18",
+  "submitted": "2026-10-06",
+  "amount": 46000,
+  "vendor": "テクノ機材センター",
+  "description": "検査工具一式",
+  "receipt": true,
+  "gold": {
+   "decision": "needs_manager",
+   "reasons": [],
+   "approver": "部長"
+  }
+ },
+ {
+  "id": "E-24",
+  "employee": "大森 剛",
+  "department": "製造部",
+  "position": "部長",
+  "category": "消耗品費",
+  "expense_date": "2026-09-18",
+  "submitted": "2026-10-06",
+  "amount": 86000,
+  "vendor": "テクノ機材センター",
+  "description": "ライン用の工具一式",
+  "receipt": true,
+  "gold": {
+   "decision": "needs_manager",
+   "reasons": [],
+   "approver": "本部長"
+  }
+ },
+ {
+  "id": "E-25",
+  "employee": "白石 学",
+  "department": "開発部",
+  "position": "部長",
+  "category": "交通費",
+  "expense_date": "2026-09-07",
+  "submitted": "2026-10-02",
+  "amount": 28600,
+  "vendor": "東海道新幹線",
+  "description": "学会参加（往復）",
+  "receipt": true,
+  "ic_record": false,
+  "gold": {
+   "decision": "needs_manager",
+   "reasons": [],
+   "approver": "本部長"
+  }
+ },
+ {
+  "id": "E-26",
+  "employee": "山根 翔太",
+  "department": "営業部",
+  "position": "一般",
+  "category": "会議費",
+  "expense_date": "2026-09-20",
+  "submitted": "2026-10-02",
+  "amount": 3000,
+  "vendor": "カフェ・ソレイユ",
+  "description": "展示会準備の打合せ",
+  "receipt": true,
+  "attendees": 3,
+  "gold": {
+   "decision": "needs_finance",
+   "reasons": [
+    "休日に発生した経費"
+   ],
+   "approver": null
+  }
+ },
+ {
+  "id": "E-27",
+  "employee": "二宮 彩",
+  "department": "情報システム部",
+  "position": "課長",
+  "category": "宿泊費",
+  "expense_date": "2026-09-14",
+  "submitted": "2026-10-05",
+  "amount": 23400,
+  "vendor": "ホテル川越ステイ",
+  "description": "工場システム更新の立会い",
+  "receipt": true,
+  "nights": 2,
+  "gold": {
+   "decision": "needs_manager",
+   "reasons": [],
+   "approver": "部長"
+  }
+ },
+ {
+  "id": "E-28",
+  "employee": "三浦 遥",
+  "department": "開発部",
+  "position": "課長",
+  "category": "宿泊費",
+  "expense_date": "2026-09-14",
+  "submitted": "2026-10-05",
+  "amount": 25600,
+  "vendor": "ホテル川越プレミア",
+  "description": "試作立会い",
+  "receipt": true,
+  "nights": 2,
+  "gold": {
+   "decision": "reject",
+   "reasons": [
+    "宿泊費の1泊あたり上限超過"
+   ],
+   "approver": null
+  }
+ },
+ {
+  "id": "E-29",
+  "employee": "早瀬 美咲",
+  "department": "経理部",
+  "position": "課長",
+  "category": "書籍費",
+  "expense_date": "2026-09-22",
+  "submitted": "2026-10-05",
+  "amount": 3300,
+  "vendor": "青林書店",
+  "description": "税務の解説書",
+  "receipt": true,
+  "gold": {
+   "decision": "auto_approve",
+   "reasons": [],
+   "approver": null
+  }
+ },
+ {
+  "id": "E-30",
+  "employee": "河合 智子",
+  "department": "人事部",
+  "position": "部長",
+  "category": "接待交際費",
+  "expense_date": "2026-09-23",
+  "submitted": "2026-10-06",
+  "amount": 15000,
+  "vendor": "割烹みなせ",
+  "description": "採用協力会社との会食",
+  "receipt": true,
+  "attendees": 2,
+  "pre_approval": "PA-0918",
+  "gold": {
+   "decision": "needs_finance",
+   "reasons": [
+    "休日に発生した経費"
+   ],
+   "approver": null
+  }
+ },
+ {
+  "id": "E-31",
+  "employee": "田村 浩二",
+  "department": "営業部",
+  "position": "部長",
+  "category": "接待交際費",
+  "expense_date": "2026-09-09",
+  "submitted": "2026-10-05",
+  "amount": 46500,
+  "vendor": "料亭たちばな",
+  "description": "主要顧客との会食",
+  "receipt": true,
+  "attendees": 5,
+  "pre_approval": "PA-0905",
+  "gold": {
+   "decision": "needs_manager",
+   "reasons": [],
+   "approver": "本部長"
+  }
+ },
+ {
+  "id": "E-32",
+  "employee": "宮下 玲子",
+  "department": "管理本部",
+  "position": "本部長",
+  "category": "宿泊費",
+  "expense_date": "2026-09-02",
+  "submitted": "2026-10-01",
+  "amount": 42000,
+  "vendor": "ホテル大崎グラン",
+  "description": "第二工場の監査",
+  "receipt": true,
+  "nights": 3,
+  "gold": {
+   "decision": "needs_manager",
+   "reasons": [],
+   "approver": "代表取締役社長"
+  }
+ },
+ {
+  "id": "E-33",
+  "employee": "山根 翔太",
+  "department": "営業部",
+  "position": "一般",
+  "category": "交通費",
+  "expense_date": "2026-09-19",
+  "submitted": "2026-10-02",
+  "amount": 6280,
+  "vendor": "東都メトロ",
+  "description": "展示会（休日開催）への移動",
+  "receipt": false,
+  "ic_record": true,
+  "gold": {
+   "decision": "auto_approve",
+   "reasons": [],
+   "approver": null
+  }
+ },
+ {
+  "id": "E-34",
+  "employee": "吉岡 拓也",
+  "department": "人事部",
+  "position": "課長",
+  "category": "消耗品費",
+  "expense_date": "2026-09-10",
+  "submitted": "2026-10-06",
+  "amount": 2900,
+  "vendor": "コンビニ北口店",
+  "description": "文具",
+  "receipt": false,
+  "gold": {
+   "decision": "auto_approve",
+   "reasons": [],
+   "approver": null
+  }
+ },
+ {
+  "id": "E-35",
+  "employee": "岡田 悠真",
+  "department": "開発部",
+  "position": "一般",
+  "category": "会議費",
+  "expense_date": "2026-09-15",
+  "submitted": "2026-10-06",
+  "amount": 3000,
+  "vendor": "カフェ・ソレイユ",
+  "description": "設計レビューの飲料",
+  "receipt": true,
+  "attendees": 2,
+  "gold": {
+   "decision": "auto_approve",
+   "reasons": [],
+   "approver": null
+  }
+ },
+ {
+  "id": "E-36",
+  "employee": "堀 陽菜",
+  "department": "人事部",
+  "position": "一般",
+  "category": "消耗品費",
+  "expense_date": "2026-09-16",
+  "submitted": "2026-10-06",
+  "amount": 10000,
+  "vendor": "オフィス用品ハナミズキ",
+  "description": "面接用の備品",
+  "receipt": true,
+  "gold": {
+   "decision": "auto_approve",
+   "reasons": [],
+   "approver": null
+  }
+ },
+ {
+  "id": "E-37",
+  "employee": "堀 陽菜",
+  "department": "人事部",
+  "position": "一般",
+  "category": "消耗品費",
+  "expense_date": "2026-09-17",
+  "submitted": "2026-10-06",
+  "amount": 10001,
+  "vendor": "オフィス用品ハナミズキ",
+  "description": "研修用の備品",
+  "receipt": true,
+  "gold": {
+   "decision": "needs_manager",
+   "reasons": [],
+   "approver": "課長"
+  }
+ },
+ {
+  "id": "E-38",
+  "employee": "西村 蓮",
+  "department": "情報システム部",
+  "position": "一般",
+  "category": "交通費",
+  "expense_date": "2026-09-08",
+  "submitted": "2026-10-06",
+  "amount": 30000,
+  "vendor": "東北新幹線",
+  "description": "第二工場への出張（往復）",
+  "receipt": true,
+  "ic_record": false,
+  "gold": {
+   "decision": "needs_manager",
+   "reasons": [],
+   "approver": "課長"
+  }
+ },
+ {
+  "id": "E-39",
+  "employee": "中西 葵",
+  "department": "経理部",
+  "position": "一般",
+  "category": "交通費",
+  "expense_date": "2026-09-30",
+  "submitted": "2026-10-10",
+  "amount": 4400,
+  "vendor": "東都メトロ",
+  "description": "監査法人への往復",
+  "receipt": false,
+  "ic_record": true,
+  "gold": {
+   "decision": "auto_approve",
+   "reasons": [],
+   "approver": null
+  }
+ },
+ {
+  "id": "E-40",
+  "employee": "中西 葵",
+  "department": "経理部",
+  "position": "一般",
+  "category": "交通費",
+  "expense_date": "2026-09-29",
+  "submitted": "2026-10-11",
+  "amount": 4400,
+  "vendor": "東都メトロ",
+  "description": "税理士事務所への往復",
+  "receipt": false,
+  "ic_record": true,
+  "gold": {
+   "decision": "needs_finance",
+   "reasons": [
+    "申請期限（翌月10日）超過"
+   ],
+   "approver": null
+  }
+ },
+ {
+  "id": "E-41",
+  "employee": "石黒 慎",
+  "department": "営業部",
+  "position": "課長",
+  "category": "宿泊費",
+  "expense_date": "2026-09-24",
+  "submitted": "2026-10-06",
+  "amount": 12000,
+  "vendor": "ホテル川越ステイ",
+  "description": "顧客の工場見学の同行",
+  "receipt": true,
+  "nights": 1,
+  "gold": {
+   "decision": "needs_manager",
+   "reasons": [],
+   "approver": "部長"
+  }
+ },
+ {
+  "id": "E-42",
+  "employee": "山根 翔太",
+  "department": "営業部",
+  "position": "一般",
+  "category": "接待交際費",
+  "expense_date": "2026-09-27",
+  "submitted": "2026-10-02",
+  "amount": 26000,
+  "vendor": "ビストロ汐留",
+  "description": "顧客との会食",
+  "receipt": false,
+  "attendees": 2,
+  "pre_approval": null,
+  "gold": {
+   "decision": "reject",
+   "reasons": [
+    "接待交際費の事前申請なし",
+    "接待交際費の1人あたり上限超過",
+    "領収書なし"
+   ],
+   "approver": null
+  }
+ }
+]

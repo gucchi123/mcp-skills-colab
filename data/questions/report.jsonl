@@ -1,0 +1,10 @@
+{"id": "rep-01", "use_case": "report", "question": "2026 年 9 月の売上合計はいくらですか。", "gold": {"answer": 30784000}, "expected_steps": ["fetch_sales"], "human_approval": false}
+{"id": "rep-02", "use_case": "report", "question": "9 月の売上は前月比で何 % 変わりましたか（小数第1位）。", "gold": {"answer": 5.2}, "expected_steps": ["fetch_sales"], "human_approval": false}
+{"id": "rep-03", "use_case": "report", "question": "9 月に売上が最も大きかった製品はどれですか。", "gold": {"answer": "TL-200"}, "expected_steps": ["fetch_sales"], "human_approval": false}
+{"id": "rep-04", "use_case": "report", "question": "9 月に前月から売上が最も伸びた製品と伸び率は。", "gold": {"answer": ["GW-5", 24.0]}, "expected_steps": ["fetch_sales"], "human_approval": false}
+{"id": "rep-05", "use_case": "report", "question": "9 月の問い合わせ件数の合計は。", "gold": {"answer": 80}, "expected_steps": ["fetch_inquiries"], "human_approval": false}
+{"id": "rep-06", "use_case": "report", "question": "9 月に最も多かった問い合わせの区分と件数は。", "gold": {"answer": ["使い方", 36]}, "expected_steps": ["fetch_inquiries"], "human_approval": false}
+{"id": "rep-07", "use_case": "report", "question": "9 月末に在庫が発注点以下だった主要品目はどれですか。", "gold": {"answer": ["M-401", "M-403", "P-102", "P-104"]}, "expected_steps": ["fetch_inventory"], "human_approval": false}
+{"id": "rep-08", "use_case": "report", "question": "8 月の苦情の件数は。", "gold": {"answer": 8}, "expected_steps": ["fetch_inquiries"], "human_approval": false}
+{"id": "rep-09", "use_case": "report", "question": "不具合の問い合わせが急に増えた月はいつで、その月に売上の前月比が最も低かった製品はどれですか。", "gold": {"answer": ["2026-08", "GW-5"]}, "expected_steps": ["fetch_inquiries", "fetch_sales"], "human_approval": false}
+{"id": "rep-10", "use_case": "report", "question": "9 月の月次レポートを型どおりに作ってください（数字は CSV から）。", "gold": {"answer": "template"}, "expected_steps": ["supervisor", "worker:sales", "worker:inquiries", "worker:inventory", "merge"], "human_approval": false}

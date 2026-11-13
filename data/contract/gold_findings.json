@@ -1,0 +1,265 @@
+{
+ "LC-01": {
+  "title": "物流業務委託契約",
+  "party": "株式会社ナギサ物流",
+  "findings": [],
+  "overall": "問題なし",
+  "params": {
+   "id": "LC-01",
+   "title": "物流業務委託契約",
+   "party": "株式会社ナギサ物流",
+   "start": "2026-04-01",
+   "months": 12,
+   "auto": true,
+   "notice": 60,
+   "fee": 1500000,
+   "our_liab": "本契約に基づく委託料の12か月分",
+   "their_months": 3,
+   "subcontract": "prior_consent",
+   "law": "日本法",
+   "court": "東京地方裁判所",
+   "nda": true
+  }
+ },
+ "LC-02": {
+  "title": "クラウドサービス利用契約",
+  "party": "株式会社アルトリス・ソフト",
+  "findings": [
+   {
+    "rule": "R1",
+    "level": "中",
+    "note": "自動更新があり、解約予告が90日前"
+   },
+   {
+    "rule": "R2",
+    "level": "高",
+    "note": "当社の損害賠償責任に上限がない"
+   },
+   {
+    "rule": "R3",
+    "level": "中",
+    "note": "相手方の賠償上限が月額料金の1か月分"
+   },
+   {
+    "rule": "R4",
+    "level": "中",
+    "note": "相手方が通知だけで再委託できる"
+   },
+   {
+    "rule": "R6",
+    "level": "低",
+    "note": "管轄が大阪地方裁判所"
+   }
+  ],
+  "overall": "法務室レビュー必須",
+  "params": {
+   "id": "LC-02",
+   "title": "クラウドサービス利用契約",
+   "party": "株式会社アルトリス・ソフト",
+   "start": "2026-01-01",
+   "months": 12,
+   "auto": true,
+   "notice": 90,
+   "fee": 300000,
+   "our_liab": "unlimited",
+   "their_months": 1,
+   "subcontract": "notice_only",
+   "law": "日本法",
+   "court": "大阪地方裁判所",
+   "nda": true
+  }
+ },
+ "LC-03": {
+  "title": "製造業務委託契約",
+  "party": "有限会社タカセ製作所",
+  "findings": [
+   {
+    "rule": "R4",
+    "level": "高",
+    "note": "相手方が承諾なく自由に再委託できる"
+   }
+  ],
+  "overall": "法務室レビュー必須",
+  "params": {
+   "id": "LC-03",
+   "title": "製造業務委託契約",
+   "party": "有限会社タカセ製作所",
+   "start": "2026-04-01",
+   "months": 12,
+   "auto": true,
+   "notice": 30,
+   "fee": 800000,
+   "our_liab": "本契約に基づく委託料の3か月分",
+   "their_months": 3,
+   "subcontract": "free",
+   "law": "日本法",
+   "court": "東京地方裁判所",
+   "nda": true
+  }
+ },
+ "LC-04": {
+  "title": "ソフトウェア開発委託契約",
+  "party": "Kestrel Systems Pte. Ltd.（架空）",
+  "findings": [
+   {
+    "rule": "R5",
+    "level": "高",
+    "note": "準拠法がシンガポール法"
+   },
+   {
+    "rule": "R6",
+    "level": "低",
+    "note": "管轄がシンガポールの裁判所"
+   }
+  ],
+  "overall": "法務室レビュー必須",
+  "params": {
+   "id": "LC-04",
+   "title": "ソフトウェア開発委託契約",
+   "party": "Kestrel Systems Pte. Ltd.（架空）",
+   "start": "2026-07-01",
+   "months": 9,
+   "auto": false,
+   "notice": null,
+   "fee": 2000000,
+   "our_liab": "本契約に基づく委託料の総額",
+   "their_months": 6,
+   "subcontract": "prior_consent",
+   "law": "シンガポール法",
+   "court": "シンガポールの裁判所",
+   "nda": true
+  }
+ },
+ "LC-05": {
+  "title": "清掃業務委託契約",
+  "party": "株式会社ベイサイド清掃",
+  "findings": [
+   {
+    "rule": "R1",
+    "level": "中",
+    "note": "自動更新があり、解約予告が120日前"
+   },
+   {
+    "rule": "R7",
+    "level": "中",
+    "note": "秘密保持の条項がない"
+   }
+  ],
+  "overall": "部長確認",
+  "params": {
+   "id": "LC-05",
+   "title": "清掃業務委託契約",
+   "party": "株式会社ベイサイド清掃",
+   "start": "2026-01-01",
+   "months": 12,
+   "auto": true,
+   "notice": 120,
+   "fee": 200000,
+   "our_liab": "本契約に基づく委託料の3か月分",
+   "their_months": 3,
+   "subcontract": "prior_consent",
+   "law": "日本法",
+   "court": "東京地方裁判所",
+   "nda": false
+  }
+ },
+ "LC-06": {
+  "title": "通信回線サービス契約",
+  "party": "株式会社ヒカリネット通信",
+  "findings": [
+   {
+    "rule": "R3",
+    "level": "中",
+    "note": "相手方の賠償上限が月額料金の0.5か月分"
+   }
+  ],
+  "overall": "部長確認",
+  "params": {
+   "id": "LC-06",
+   "title": "通信回線サービス契約",
+   "party": "株式会社ヒカリネット通信",
+   "start": "2026-04-01",
+   "months": 24,
+   "auto": true,
+   "notice": 30,
+   "fee": 250000,
+   "our_liab": "本契約に基づく月額料金の3か月分",
+   "their_months": 0.5,
+   "subcontract": "prior_consent",
+   "law": "日本法",
+   "court": "東京地方裁判所",
+   "nda": true
+  }
+ },
+ "LC-07": {
+  "title": "労働者派遣契約",
+  "party": "株式会社オオトリ人材",
+  "findings": [
+   {
+    "rule": "R6",
+    "level": "低",
+    "note": "管轄が名古屋地方裁判所"
+   }
+  ],
+  "overall": "担当者確認",
+  "params": {
+   "id": "LC-07",
+   "title": "労働者派遣契約",
+   "party": "株式会社オオトリ人材",
+   "start": "2026-07-01",
+   "months": 6,
+   "auto": false,
+   "notice": null,
+   "fee": 480000,
+   "our_liab": "本契約に基づく派遣料金の3か月分",
+   "their_months": 3,
+   "subcontract": "prohibited",
+   "law": "日本法",
+   "court": "名古屋地方裁判所",
+   "nda": true
+  }
+ },
+ "LC-08": {
+  "title": "共同開発契約",
+  "party": "株式会社マキノ化成",
+  "findings": [
+   {
+    "rule": "R1",
+    "level": "中",
+    "note": "自動更新があり、解約予告が180日前"
+   },
+   {
+    "rule": "R2",
+    "level": "高",
+    "note": "当社の損害賠償責任に上限がない"
+   },
+   {
+    "rule": "R3",
+    "level": "中",
+    "note": "相手方の損害賠償に上限の定めがない"
+   },
+   {
+    "rule": "R6",
+    "level": "低",
+    "note": "管轄が大阪地方裁判所"
+   }
+  ],
+  "overall": "法務室レビュー必須",
+  "params": {
+   "id": "LC-08",
+   "title": "共同開発契約",
+   "party": "株式会社マキノ化成",
+   "start": "2026-07-01",
+   "months": 24,
+   "auto": true,
+   "notice": 180,
+   "fee": 1000000,
+   "our_liab": "unlimited",
+   "their_months": null,
+   "subcontract": "prohibited",
+   "law": "日本法",
+   "court": "大阪地方裁判所",
+   "nda": true
+  }
+ }
+}

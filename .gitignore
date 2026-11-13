@@ -1,0 +1,10 @@
+state/
+.venv/
+__pycache__/
+.pytest_cache/
+_api_cost_ledger.jsonl
+lab10_mcp_x_skills/workspace/
+out_mock/
+_nbrun/
+.cache/*
+!.cache/llm.sqlite

@@ -1,0 +1,40 @@
+{"id": "TS-01", "question": "出張の申請はいつまでに出せばいいですか", "expected_tools": ["search_regulations"], "first_tool": "search_regulations"}
+{"id": "TS-02", "question": "ソフトウェアを入れたいときの手続きを教えて", "expected_tools": ["search_regulations"], "first_tool": "search_regulations"}
+{"id": "TS-03", "question": "職務権限規程の全文を見せて", "expected_tools": ["get_regulation"], "first_tool": "get_regulation", "also_ok": ["search_regulations"], "why": "get_regulation は文書番号が要り、説明に「番号が分からなければ先に search_regulations」とある"}
+{"id": "TS-04", "question": "在宅勤務の申請手続きの文書を開いて", "expected_tools": ["get_regulation"], "first_tool": "get_regulation", "also_ok": ["search_regulations"], "why": "同上 (文書番号が問いに無い)"}
+{"id": "TS-05", "question": "代理者規程で、部長が不在のときは誰が決裁しますか", "expected_tools": ["search_regulations"], "first_tool": "search_regulations"}
+{"id": "TS-06", "question": "採用申請には何が要りますか", "expected_tools": ["search_regulations"], "first_tool": "search_regulations"}
+{"id": "TS-07", "question": "ツバメ冷凍の顧客番号は", "expected_tools": ["find_customer"], "first_tool": "find_customer"}
+{"id": "TS-08", "question": "さくら医療器の担当営業は誰ですか", "expected_tools": ["find_customer", "get_customer"], "first_tool": "find_customer"}
+{"id": "TS-09", "question": "C-005 の与信枠を教えて", "expected_tools": ["get_customer"], "first_tool": "get_customer"}
+{"id": "TS-10", "question": "GW-5 を買っているお客さんを全部出して", "expected_tools": ["list_customers_by_product"], "first_tool": "list_customers_by_product"}
+{"id": "TS-11", "question": "SC-30 のユーザー企業はどこ", "expected_tools": ["list_customers_by_product"], "first_tool": "list_customers_by_product"}
+{"id": "TS-12", "question": "白鷺製薬の先方の担当者に電話したい", "expected_tools": ["find_customer", "get_customer"], "first_tool": "find_customer"}
+{"id": "TS-13", "question": "P-103 の在庫はいくつありますか", "expected_tools": ["get_stock"], "first_tool": "get_stock"}
+{"id": "TS-14", "question": "発注点を割っている品目はどれ", "expected_tools": ["list_below_reorder"], "first_tool": "list_below_reorder"}
+{"id": "TS-15", "question": "P-112 を 200 個発注して", "expected_tools": ["get_stock", "create_purchase_order"], "first_tool": "get_stock"}
+{"id": "TS-16", "question": "在庫が少ないものを補充しておいて", "expected_tools": ["list_below_reorder", "create_purchase_order"], "first_tool": "list_below_reorder"}
+{"id": "TS-17", "question": "T-301 はまだ発注しなくて大丈夫？", "expected_tools": ["get_stock"], "first_tool": "get_stock"}
+{"id": "TS-18", "question": "昨日のタクシー代 2,400 円は自動で通りますか", "expected_tools": ["check_expense"], "first_tool": "check_expense", "also_ok": ["search_regulations", null], "why": "check_expense は申請者・支払先・領収書の有無が必須で、問いに無い。規程を調べるか聞き返すのが筋"}
+{"id": "TS-19", "question": "この会議費の申請を出しておいて", "expected_tools": ["check_expense", "submit_expense"], "first_tool": "check_expense", "also_ok": [null], "why": "申請の中身 (日付・金額・人数など) が問いに無い。聞き返すのが筋"}
+{"id": "TS-20", "question": "E-17 の申請はいまどうなっていますか", "expected_tools": ["get_expense_status"], "first_tool": "get_expense_status"}
+{"id": "TS-21", "question": "接待の 3 人分 36,000 円、通るか見て", "expected_tools": ["check_expense"], "first_tool": "check_expense", "also_ok": ["search_regulations", null], "why": "TS-18 と同じ (必須の項目が問いに無い)"}
+{"id": "TS-22", "question": "2026 年 8 月の売上の合計は", "expected_tools": ["get_monthly_sales"], "first_tool": "get_monthly_sales"}
+{"id": "TS-23", "question": "9 月の問い合わせは何件でしたか", "expected_tools": ["get_inquiry_counts"], "first_tool": "get_inquiry_counts"}
+{"id": "TS-24", "question": "GW-5 の売上は 8 月にどれくらい落ちた？", "expected_tools": ["get_monthly_sales"], "first_tool": "get_monthly_sales"}
+{"id": "TS-25", "question": "8 月末の在庫を主要品目で見せて", "expected_tools": ["get_inventory_snapshot"], "first_tool": "get_inventory_snapshot"}
+{"id": "TS-26", "question": "9 月の月次レポートに入れる数字をそろえて", "expected_tools": ["get_monthly_sales", "get_inquiry_counts", "get_inventory_snapshot"], "first_tool": "get_monthly_sales"}
+{"id": "TS-27", "question": "いま有効な契約書の一覧は", "expected_tools": ["list_contracts"], "first_tool": "list_contracts"}
+{"id": "TS-28", "question": "LC-03 の契約書を読んで", "expected_tools": ["get_contract"], "first_tool": "get_contract"}
+{"id": "TS-29", "question": "契約の一次レビューで何を確認するんでしたっけ", "expected_tools": ["get_contract_checklist"], "first_tool": "get_contract_checklist"}
+{"id": "TS-30", "question": "LC-06 に法務のレビューが要るか見て", "expected_tools": ["get_contract", "get_contract_checklist"], "first_tool": "get_contract"}
+{"id": "TS-31", "question": "損害賠償の上限がない契約はある？", "expected_tools": ["list_contracts", "get_contract"], "first_tool": "list_contracts"}
+{"id": "TS-32", "question": "IT 機器を買うときの決裁者は", "expected_tools": ["search_regulations"], "first_tool": "search_regulations"}
+{"id": "TS-33", "question": "取引停止の発注先から買おうとしたらどうなる？", "expected_tools": ["search_regulations"], "first_tool": "search_regulations"}
+{"id": "TS-34", "question": "P-105 の発注先はどこ", "expected_tools": ["get_stock"], "first_tool": "get_stock"}
+{"id": "TS-35", "question": "鳴海ホテルは何を買っていますか", "expected_tools": ["find_customer", "get_customer"], "first_tool": "find_customer"}
+{"id": "TS-36", "question": "7 月と 9 月の売上を比べて", "expected_tools": ["get_monthly_sales"], "first_tool": "get_monthly_sales"}
+{"id": "TS-37", "question": "交通費の上限はいくら", "expected_tools": ["search_regulations"], "first_tool": "search_regulations"}
+{"id": "TS-38", "question": "この経費、領収書がないけど通る？ 3,500 円の書籍代", "expected_tools": ["check_expense"], "first_tool": "check_expense", "also_ok": ["search_regulations", null], "why": "TS-18 と同じ (必須の項目が問いに無い)"}
+{"id": "TS-39", "question": "今日の東京の天気は", "expected_tools": [], "first_tool": null}
+{"id": "TS-40", "question": "社長に挨拶のメールを書いて", "expected_tools": [], "first_tool": null}
